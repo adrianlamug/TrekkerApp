@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/trekkFragment"
+        android:icon="@drawable/ic_trail_image"
+        android:title="Your Trails" />
+
+    <item
+        android:id="@+id/statisticsFragment"
+        android:icon="@drawable/ic_stats"
+        android:title="Statistics" />
+    <item
+        android:id="@+id/customTrailsFragment2"
+        android:icon="@drawable/ic_run_black"
+        android:title="Saved Trails" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_cogwheel"
+        android:title="Settings" />
+
+</menu>

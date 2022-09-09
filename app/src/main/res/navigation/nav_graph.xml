@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/setupFragment">
+
+    <action android:id="@+id/action_global_trackingFragment"
+        app:destination="@id/trackingFragment"
+        app:launchSingleTop="true" />
+
+    <action android:id="@+id/second_action_global_trackingFragment"
+        app:destination="@id/trekkFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/trekkFragment"
+        android:name="com.example.myapplication.ui.fragments.TrekkFragment"
+        android:label="TrekkFragment" >
+        <action
+            android:id="@+id/action_trekkFragment_to_trackingFragment"
+            app:destination="@id/trackingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.myapplication.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.example.myapplication.ui.fragments.SetupFragment"
+        android:label="SetupFragment" >
+        <action
+            android:id="@+id/action_setupFragment_to_trekkFragment"
+            app:destination="@id/trekkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.myapplication.ui.fragments.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.example.myapplication.ui.fragments.TrackingFragment"
+        android:label="TrackingFragment" >
+        <action
+            android:id="@+id/action_trackingFragment_to_trekkFragment"
+            app:destination="@id/trekkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customTrailsFragment2"
+        android:name="com.example.myapplication.ui.fragments.CustomTrailsFragment"
+        android:label="CustomTrailsFragment" >
+        <action
+        android:id="@+id/action_trackingFragment_to_trekkFragment"
+        app:destination="@id/trekkFragment" />
+    </fragment>
+</navigation>

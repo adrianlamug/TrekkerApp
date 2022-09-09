@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Trekker</string>
+    <string name="tv_stepsTaken">0</string>
+    <string name="googleMapsKey">AIzaSyCNhhxrBKeu1w0Dq4VYMK0ofLYcCePojUE</string>
+    <string name="steps_taken">Steps Taken</string>
+    <string name="user_statistics">User Statistics</string>
+
+    <string name="continuee">Continue</string>
+
+    <string name="your_name">Your Name</string>
+    <string name="welcome">Welcome</string>
+    
+    <string-array name="filterOptions">
+        <item>Date</item>
+        <item>Trail Time</item>
+        <item>Average Speed</item>
+        <item>Distance</item>
+    </string-array>
+</resources>
